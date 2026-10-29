@@ -142,9 +142,16 @@ a{color:inherit;text-decoration:none}
 .btn.c-br .cta svg{width:15px;height:15px}
 .btn.c-br .txt small{display:none}
 .btn.c-br .apps-row{grid-template-columns:repeat(9,minmax(0,1fr));justify-content:stretch;gap:6px}
+/* header like city pages */
+.head{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:14px;row-gap:3px;align-items:center;text-align:left;padding:0}
+.head>*{min-width:0}
+.mark{width:60px;height:60px;grid-row:1/3;grid-column:1}
+.mark img{width:100%;height:100%}
+.brand{font-size:24px;grid-column:2;align-self:end}
+.tag{grid-column:2;align-self:start;font-size:clamp(11px,3.15vw,12.5px);line-height:1.3;white-space:nowrap}
+.tag b{font-weight:500;color:var(--ink-2);font-size:inherit}
+@media(max-width:350px){.tag{white-space:normal;text-wrap:balance}}
 </style>
-</head>
-<body>
 
 <main class="wrap">
   <header class="head">
@@ -187,6 +194,3 @@ a{color:inherit;text-decoration:none}
     <svg class="arr" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
   </a>
 </main>
-
-</body>
-</html>
